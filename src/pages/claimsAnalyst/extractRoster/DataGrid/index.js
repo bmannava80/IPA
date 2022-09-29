@@ -348,8 +348,8 @@ const DataGrid = () => {
                       </>
                     }
 
-                    <PrintablePdf columns={columns} rows={rows} />
-                    <PdfDownload columns={columns} rows={rows} />
+                    <PrintablePdf columns={columns} rows={pdfRows} />
+                    <PdfDownload columns={columns} rows={pdfRows} />
 
                     <div onClick={() => {
                       setDetach(false)
