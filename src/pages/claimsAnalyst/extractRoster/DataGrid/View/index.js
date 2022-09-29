@@ -43,7 +43,7 @@ const View = ({ setReorder, gridRef, advancedSort, setAdvancedSort, detach, setD
                     <div className="shadow-lg fixed dropdown-z h-24 bg-white border-2 border-gray-200 left-0 bottom-0 transform" style={{top: dropdown.y + 10, left: dropdown.x - 2}}>
                         
                         <div className="group relative flex items-center justify-between py-2 px-2 border-b-2 border-gray-200 hover:bg-gray-200 bg-white">
-                            <p className='ml-1 mr-16 text-sm font-normal'>
+                            <p className='mb-0 ml-1 mr-16 text-sm font-normal'>
                                 Columns
                             </p>
                             <AiFillCaretRight/>

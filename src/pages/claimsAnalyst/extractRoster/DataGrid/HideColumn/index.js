@@ -37,7 +37,7 @@ const HideColumn = ({ columns, setColumns, setDropdown }) => {
             <div className="group-hover:block hidden absolute w-44 bg-white border-2 border-gray-200 right-0 top-0 transform translate-x-full">
                     
                                 <div onClick={showAll} className="relative flex items-center py-2 px-10 hover:bg-gray-200 bg-white">
-                                    <p className="text-xs font-normal">Show All</p>
+                                    <p className="mb-0 text-xs font-normal">Show All</p>
                                 </div>
                     {
                         columns.map((item, index) => (
@@ -50,7 +50,7 @@ const HideColumn = ({ columns, setColumns, setDropdown }) => {
                                     <AiOutlineCheck className='flex-shrink-0 text-color-primary'/>
 
                                     }
-                                    <p className='text-xs font-normal ml-4'>
+                                    <p className='mb-0 text-xs font-normal ml-4'>
                                         {item.name}
                                     </p>
                                 </div>

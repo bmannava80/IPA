@@ -269,9 +269,9 @@ const DataGrid = () => {
                             })
                             return copy
                           })
-                        }} className={`cursor-pointer  font-bold flex items-center space-x-2 border-r-2  py-0 px-3 ${detach ? "color-primary text-white" : "border-gray-200"}`}>
-                          <p className="text-sm p-0">
-                            Advanced Sort
+                        }} className={`cursor-pointer  font-bold flex items-center space-x-2 border-r-2  py-0 px-3 color-primary text-white`}>
+                          <p className="m-0 p-0">
+                            Remove Advanced Sorting
                           </p>
                           <FaTimes />
                         </div>
@@ -340,7 +340,7 @@ const DataGrid = () => {
                             return copy
                           })
                         }} className={`cursor-pointer  font-bold flex items-center space-x-2 border-r-2  py-0 px-3 ${detach ? "color-primary text-white" : "border-gray-200"}`}>
-                          <p className="p-0">
+                          <p className="m-0 p-0">
                             Remove Advanced Sorting
                           </p>
                           <FaTimes />
