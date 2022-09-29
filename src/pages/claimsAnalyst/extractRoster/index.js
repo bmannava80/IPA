@@ -2,6 +2,7 @@ import { useState } from 'react';
 import ExtractTableModal from './extractTableModal';
 
 import ExtractRosterTable from './extactRosterTable';
+import DataGrid from "./DataGrid";
 
 export default function ExtractRoster() {
   const [isOpen, setModals] = useState(false);
@@ -14,8 +15,9 @@ export default function ExtractRoster() {
   };
   return (
     <div>
-      <ExtractRosterTable openModal={openModal} />
-      <ExtractTableModal isOpen={isOpen} closeModal={closeModal}></ExtractTableModal>
+      {/* <ExtractRosterTable openModal={openModal} />
+      <ExtractTableModal isOpen={isOpen} closeModal={closeModal}></ExtractTableModal> */}
+      <DataGrid/>
     </div>
   );
 }

@@ -7,6 +7,7 @@ import {
   UncontrolledDropdown,
 } from 'reactstrap';
 import NewExtractModal from '../../newExtractModal';
+import Extract from "./Extract"
 
 export default function StepTwo({ description }) {
   const [isOpen, setModals] = useState(false);
@@ -34,30 +35,7 @@ export default function StepTwo({ description }) {
         </div>
         <div className="new-extract-parameter">* File Layout</div>
         <div>
-          <div className="new-extract-choose-parameter">
-            <div>Extract Parameter</div>
-            <UncontrolledDropdown direction="up">
-              <DropdownToggle style={{ backgroundColor: '#b3d69c', marginLeft: '5px' }} caret>
-                File Layout
-              </DropdownToggle>
-              <DropdownMenu>
-                <DropdownItem>Some Action</DropdownItem>
-                <DropdownItem>Some Action</DropdownItem>
-                <DropdownItem>Some Action</DropdownItem>
-                <DropdownItem>Some Action</DropdownItem>
-                <DropdownItem>Some Action</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-          </div>
-          <div className="new-extract-choose-parameter">
-            <div>File Layout</div>
-            <div className="new-extract-search-box">
-              <input value={nameLayout} onChange={(e) => setNameLayout(e.target.value)}></input>
-              <Button onClick={openModal} style={{ backgroundColor: 'white' }}>
-                🔍
-              </Button>
-            </div>
-          </div>
+          <Extract/>
           <div className="new-extract-info-button">
             <div className="tab-new-extract-button">
               <Button>Save</Button>
